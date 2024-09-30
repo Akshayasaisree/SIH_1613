@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Logged Activities Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -148,6 +148,58 @@
             margin-left: 1rem;
             margin-right: 1rem;
         }
+        main {
+
+            display: flex;
+          }
+      
+          .sidebar {
+            background-color: #1f1f1f;
+            color: white;
+            padding: 20px;
+            width: 200px;
+          }
+      
+          .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+          }
+      
+          .main-content {
+            padding: 20px;
+            flex: 1;
+          }
+      
+          .card {
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+          }
+      
+          .progress-bar {
+            height: 20px;
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+          }
+          .progress-bar-fill {
+            height: 100%;
+            background-color: #4caf50;
+          }
+      
+          .progress-bar-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #333;
+          }
+      
+      
     </style>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -159,13 +211,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="carrer.html">Career Tools</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="faculty.html">Faculty profiles</a>
+                        <a class="nav-link active" href="faculty.html">Faculty profiles</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About us</a>
@@ -177,62 +229,63 @@
                 <img class="img" src="1.webp">
         </div>
     </nav>
-    <section class="hero">
-        <div class="hero-text">
-            <h1 style="color:black">Automated System for Career Advancements <br>of the Faculties of Higher Education</h1><br>
-            <a href="#"class="btn">Sign Up / Login</a>
-        </div>
-    </section>
     <main>
-        <section>
-            <div class="list">
-                <article class="movie">
-                    <img src="https://tse1.mm.bing.net/th?id=OIP.B8CwH8m-dX_J-p_Dfa4h5QHaED&pid=Api&P=0&h=180" alt="Movie 1" class="img-pop">
-                    <h3>User Authentication</h3>
-                    <p>Faculty members and administrators will have unique accounts with secureaccess.</p>
-                    <p>Faculty members can only view and manage their own data</p>
-                </article>
-                <article class="movie">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlZ9dMb1euFCZnU0Tc70iia-bve50UqGaMaw&s" alt="Movie 2" class="img-pop">
-                    <h3>Real-time Tracking</h3>
-                    <p>Faculty can update their profiles regularly with new achievements, and the
-                        system will automatically track and display their progress.</p>
-                    <p> Reduces delays by allowing users to monitor progress and make adjustments on the go.</p>
-                </article>
-                <article class="movie">
-                    <img src="https://tse4.mm.bing.net/th?id=OIP.H5wIPm7sCrvPLTOkP8Kh-AHaE7&pid=Api&P=0&w=300&h=300" alt="Movie 3" class="img-pop">
-                    <h3>Data Management & Security</h3>
-                    <p>A secure database will store the appraisal data, ensuring efficient data retrieval,
-                        confidentiality, and integrity.</p>
-                    <p>Faculty data is only accessible to authorized individuals, and sensitive data is
-                        protected through encryption,</p>
-                </article>
-            </div>
-            <div class="list">
-                <article class="movie">
-                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/e607d179627979.5cc92402522d0.jpg" alt="Movie 4" class="img-pop">
-                    <h3>Admin Panel for Evaluation</h3>
-                    <p>Administrators can view the consolidated records for each faculty member,
-                        allowing them to make informed decisions.</p>
-                    <p>The panel will include sorting, filtering, and searching capabilities based on
-                    name, employee code, or date of submission.</p>
-                </article>
-                <article class="movie">
-                    <img src="https://tse2.mm.bing.net/th?id=OIP.n-tMwTjNFyuieUrBlpwSpgHaDm&pid=Api&P=0&w=300&h=300" alt="Movie 5" class="img-pop">
-                    <h3>User Experience (UX)</h3>
-                    <p>The platform must be intuitive and easy to navigate, ensuring faculty members
-                    can easily log their activities without extensive training.</p>
-                   <p>A cohesive UX design reinforces brand identity, ensuring that users associate positive experiences with the brand.</p>
-                </article>
-                <article class="movie">
-                    <img src="https://th.bing.com/th/id/OIP.rB6O-XNOGF7FN8VmTaRmLwHaEA?w=1480&h=800&rs=1&pid=ImgDetMain" alt="Movie 5" class="img-pop">
-                    <h3>Paperless Solution</h3>
-                    <p>The entire system supports the Paperless India initiative, as it reduces or
-                    eliminates the need for physical paperwork.</p>
-                     <p>This helps modernize the appraisal process and makes it more sustainable.</p>
-                </article>
-            </div>
-        </section>
+    <div class="sidebar">
+        <h2>POTOK LINKS</h2>
+        <a href="#">Add Research Publication</a>
+        <a href="#">Add Seminar/Event</a>
+        <a href="#">Update Lecture</a>
+        <a href="#">Profile Settings</a>
+    </div>
+
+    <div class="main-content">
+    <h1>Overview of Logged Activities</h1>
+
+    <div class="card">
+      <h2>Research Publications: 12</h2>
+      <h2>Seminars Conducted: 8</h2>
+      <h2>Events Attended: 5</h2>
+      <h2>Leactures Delivered: 10</h2>
+    </div>
+
+    <div class="card">
+      <h2>Notifications</h2>
+      <ul>
+        <li>Submission reminder: Research paper due on October 5, 2024.</li>
+        <li>Admin comment: Update seminar details by next week.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+        <h2>Activity Progress Over Time</h2>
+
+      <h3>Research Publications</h3>
+      <div class="progress-bar">
+        <div class="progress-bar-fill" style="width: 75%;"></div>
+        <div class="progress-bar-text">75%</div>
+      </div>
+
+      <h3>Seminars Conducted</h3>
+      <div class="progress-bar">
+        <div class="progress-bar-fill" style="width: 60%;"></div>
+        <div class="progress-bar-text">60%</div>
+      </div>
+
+      <h3>Events Attended</h3>
+      <div class="progress-bar">
+        <div class="progress-bar-fill" style="width: 50%;"></div>
+        <div class="progress-bar-text">50%</div>
+      </div>
+
+      <h3>Lectures Delivered</h3>
+      <div class="progress-bar">
+        <div class="progress-bar-fill" style="width: 100%;"></div>
+        <div class="progress-bar-text">100%</div>
+      </div>
+
+    </div>
+  </div>
+
     </main>
     <footer>
         <div class="footer-content">
@@ -243,6 +296,7 @@
                 <a href="#">LinkedIn</a> | <a href="#">Twitter</a>
             </div>
         </div>
+        
         <div class="footer-contact">
             <a href="#">Contact Us</a>
         </div>
